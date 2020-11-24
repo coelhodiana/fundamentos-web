@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6, a {
     font-family: 'Miriam Libre', sans-serif;
     margin: 10px 0;
     line-height: 2.2rem;
+    text-decoration: none;
 }
 
 h1 {
@@ -224,6 +225,10 @@ main {
 
 main div {
     justify-content: space-between;
+}
+
+button a {
+    color: #fff;
 }
 .main-txt {
     grid-column: span 4;
