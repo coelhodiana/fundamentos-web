@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@700&family=Raleway&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  background-color: #F6F6F6;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Miriam Libre', sans-serif;
+    margin: 10px 0;
+    line-height: 2.2rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+body, p, ol {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  
+}
+
+body {
+    overflow-y:scroll;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+input {
+    border: solid 4px #000;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    border-radius: 0;
+}
+
+textarea {
+    border: solid 4px #000;
+    padding: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1280px;
+}
+
+button {
+    color: white;
+    background-color: #FF003C;
+    padding: 25px 35px;
+    border: none;
+    font-family: 'Miriam Libre', sans-serif;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.pd-70 {
+    padding: 70px 0;
+}
+
+.w-35 {
+    width: 35%;
+}
+.w-50 {
+    width: 50%;
+}
+
+.w-65 {
+    width: 65%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexgrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    iframe {
+        height: 400px;
+    }
+
+    .m-70 {
+        margin: 70px 0;
+    }
+
+    nav > #menu li{
+        padding-left: 20px;
+    }
+
+    .ps-20 {
+        padding: 0 20px;
+    }
+
+    .w-65 {
+        width: 100%;
+    }
+    
+    .flexgrid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+/* index styles */
+/* Nav */
+nav {
+    background-color: #FEF604;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .container img {
+    width: 150px;
+    height: auto;
+}
+
+#menu {
+    padding: 10px 0;
+}
+
+#menu li{
+    display: inline;
+    padding: 20px 0;
+    margin-left: 10px;
+}
+
+#menu li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+#menu li a:hover {
+    color: #FF003C;
+}
+
+/* Hero section */
+.y-section {
+    background-color: #FEF604;
+    padding-bottom: 0px;
+}
+
+.hero-img {
+    height: 600px;
+    overflow: hidden;
+    object-fit: cover;
+    grid-column: span 4;
+}
+.hero-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-txt {
+    grid-column: span 2;
+    padding-left: 40px;
+}
+
+/* main */
+main {
+    background-color: #f0f0f0;
+}
+
+main div {
+    justify-content: space-between;
+}
+.main-txt {
+    grid-column: span 4;
+    padding-right: 40px;
+}
+
+.main-info {
+    background-color: #000000;
+    color: #fff;
+    padding: 80px 40px;
+    grid-column: span 2;
+}
+
+/* s-video */
+.s-video {
+    background-color: #000;
+    color: #FF003C;
+    
+}
+
+/* Footer */
+footer {
+    padding: 70px 0;
+}
+
+.tm-social {
+    width: 50px;
+    height: 50px;
+}
+
+.p-30 {
+    padding: 3px;
+}
+
+/* Contact page */
+form {
+    grid-column: span 3;
+    padding: 20px;
+}
+
+.adress {
+    grid-column: span 3;
+    padding: 20px;
+}
